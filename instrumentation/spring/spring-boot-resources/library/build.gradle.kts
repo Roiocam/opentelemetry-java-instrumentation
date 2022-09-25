@@ -1,5 +1,5 @@
 plugins {
-  id("otel.library-instrumentation")
+  id("otel.sdk-extension")
 }
 
 dependencies {
@@ -9,7 +9,7 @@ dependencies {
   compileOnly("com.google.auto.service:auto-service-annotations")
   testCompileOnly("com.google.auto.service:auto-service-annotations")
 
-  implementation("org.yaml:snakeyaml:1.31")
+  implementation("org.yaml:snakeyaml")
 
   testImplementation("io.opentelemetry:opentelemetry-sdk-extension-autoconfigure-spi")
 }
